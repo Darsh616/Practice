@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Software Engineer</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body class="bg-gray-100 text-gray-900">
+    <nav class="bg-white shadow-lg fixed w-full z-10 top-0">
+        <div class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
+            <div class="text-xl font-bold">My Portfolio</div>
+            <div>
+                <a href="#home" class="px-4 py-2 text-gray-700 hover:text-gray-900">Home</a>
+                <a href="#about" class="px-4 py-2 text-gray-700 hover:text-gray-900">About</a>
+                <a href="#projects" class="px-4 py-2 text-gray-700 hover:text-gray-900">Projects</a>
+                <a href="#contact" class="px-4 py-2 text-gray-700 hover:text-gray-900">Contact</a>
+            </div>
+        </div>
+    </nav>
+    <header id="home" class="bg-cover bg-center h-screen flex items-center justify-center" style="background-image: url('https://source.unsplash.com/1600x900/?coding');">
+        <div class="bg-black bg-opacity-50 p-8 rounded-lg text-center">
+            <h1 class="text-white text-5xl font-bold mb-4">Hello World! Welcome to My Portfolio Website.</h1>
+            <p class="text-white text-lg">Exploring the Intersection of Code and Creativity</p>
+        </div>
+    </header>
+    <section id="about" class="py-16 bg-white">
+        <div class="max-w-4xl mx-auto px-4 text-center">
+            <h2 class="text-3xl font-bold mb-4">About Me</h2>
+            <p class="text-lg text-gray-700">Greetings! I'm passionate about software development with a solid foundation in Java programming. Over the past year, I've immersed myself in creating efficient and scalable solutions, driven by a curiosity to explore new technologies and innovate in the digital landscape. With a keen eye for detail and a knack for problem-solving, I strive to deliver high-quality code that transforms ideas into reality. Beyond coding, I enjoy collaborating with teams to tackle challenges and deliver impactful solutions. Let's connect and embark on exciting tech journeys together!</p>
+        </div>
+    </section>
+    <section id="projects" class="py-16 bg-gray-100">
+        <div class="max-w-4xl mx-auto px-4 text-center">
+            <h2 class="text-3xl font-bold mb-8">Projects</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-8">
+                <div class="bg-white p-6 shadow-lg rounded-lg transition-transform transform hover:scale-105">
+                    <a href="https://darsh616.github.io/Travelling/" target="_blank">
+                        <img src="https://wallpapers.com/images/hd/travel-4k-volcano-ynlmn2hmts0n7gsw.jpg" alt="Travelling" class="w-full h-48 object-cover rounded mb-4">
+                    </a>
+                    <h3 class="text-xl font-bold mb-2">Travel</h3>
+                    <p class="text-gray-700"> Crafted with 
+                        <b>HTML, CSS, JavaScript, and the finesse of Tailwind CSS,  Travel</b> blends artistry with technology to redefine travel planning. Dive into dynamic destinations, where every click sparks a new adventure. Let our digital canvas guide you to unforgettable experiences, effortlessly.</p>
+                </div>
+                <div class="bg-white p-6 shadow-lg rounded-lg transition-transform transform hover:scale-105">
+                    <a href="https://darsh616.github.io/Electrosmart/" target="_blank">
+                        <img src="https://wallpapers.com/images/featured/electronics-1ovz9er6jk6otp61.jpg" alt="Electrosmart" class="w-full h-48 object-cover rounded mb-4">
+                    </a>
+                    <h3 class="text-xl font-bold mb-2">Electrosmart</h3>
+                    <p class="text-gray-700"><b>ElectroSmart</b> is an IoT home automation and energy management system. It uses PHP to connect ESP32 devices with a web interface and SQL databases for secure data storage. With <b>HTML, JS, and CSS</b> ,it offers remote appliance control and real-time insights into electricity consumption and costs. Designed for user-friendliness and sustainability, ElectroSmart empowers users to optimize energy usage and make informed decisions. Future enhancements aim to expand compatibility, integrate AI analytics, and incorporate renewable energy solutions.</p>
+                </div>
+                <div class="bg-white p-6 shadow-lg rounded-lg transition-transform transform hover:scale-105">
+                    <img src="https://source.unsplash.com/300x200/?software,engineer" alt="Project Three" class="w-full h-48 object-cover rounded mb-4">
+                    <h3 class="text-xl font-bold mb-2">Project Three</h3>
+                    <p class="text-gray-700">A brief description of the project, highlighting key features and technologies used.</p>
+                </div>
+                <div class="bg-white p-6 shadow-lg rounded-lg transition-transform transform hover:scale-105">
+                    <img src="https://source.unsplash.com/300x200/?programming,code" alt="Project Four" class="w-full h-48 object-cover rounded mb-4">
+                    <h3 class="text-xl font-bold mb-2">Project Four</h3>
+                    <p class="text-gray-700">A brief description of the project, highlighting key features and technologies used.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="contact" class="py-16 bg-white">
+        <div class="max-w-4xl mx-auto px-4 text-center">
+            <h2 class="text-3xl font-bold mb-4">Contact Me</h2>
+            <p class="text-lg text-gray-700 mb-8">Feel free to reach out to me for any enquiries or collaboration opportunities.</p>
+            <div class="bg-gray-100 p-8 rounded-lg shadow-lg">
+                <p class="text-2xl font-bold mb-2">Darshan Katkam</p>
+                <p class="text-lg text-gray-700 mb-2">Phone: 8928768795</p>
+                <p class="text-lg text-gray-700 mb-4">Email: darshankatkam@gmail.com</p>
+                <form class="mt-8 space-y-4" id="contactForm">
+                    <div>
+                        <input type="text" id="name" class="w-full p-3 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-blue-500" placeholder="Your Name" required>
+                    </div>
+                    <div>
+                        <input type="email" id="email" class="w-full p-3 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-blue-500" placeholder="Your Email" required>
+                    </div>
+                    <div>
+                        <textarea id="message" class="w-full p-3 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-blue-500" placeholder="Your Message" rows="4" required></textarea>
+                    </div>
+                    <button type="submit" class="px-6 py-3 bg-blue-500 text-white font-bold rounded hover:bg-blue-600 transition-colors">Send Message</button>
+                </form>
+            </div>
+            <div class="mt-8 flex justify-center space-x-4">
+                <a href="https://linkedin.com/in/yourprofile" target="_blank" class="text-gray-700 hover:text-gray-900">
+                    <i class="fab fa-linkedin fa-2x"></i>
+                </a>
+                <a href="https://github.com/yourprofile" target="_blank" class="text-gray-700 hover:text-gray-900">
+                    <i class="fab fa-github fa-2x"></i>
+                </a>
+                <a href="https://twitter.com/yourprofile" target="_blank" class="text-gray-700 hover:text-gray-900">
+                    <i class="fab fa-twitter fa-2x"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+    <footer class="bg-gray-800 text-white py-4 text-center">
+        &copy; 2024 My Portfolio. All rights reserved.
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

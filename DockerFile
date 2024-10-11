@@ -1,0 +1,19 @@
+#Pulling the Base image from docker hub
+FROM --platform=$BUILDPLATFORM python:3.10-alpine AS builder 
+
+#Working directory 
+WORKDIR /app
+
+# Copy all the files 
+COPY Flask.py /app
+COPY index.html /app
+COPY requirement.txt /app
+
+#To install 
+
+RUN pip3 install -r requirement.txt
+
+EXPOSE 8000
+
+ENTRYPOINT [ "python" ]
+CMD [ "Flask.py" ]

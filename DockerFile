@@ -1,5 +1,5 @@
 # Pull the Base image from Docker Hub
-FROM python:3.10-alpine AS builder
+FROM --platform=$BUILDPLATFORM python:3.10-alpine AS builder
 
 # Set the working directory
 WORKDIR /app
@@ -16,7 +16,6 @@ RUN pip3 install -r requirements.txt
 EXPOSE 8000
 
 # Entry point for the container
-ENTRYPOINT [ "python" ]
+ENTRYPOINT [ "python3" ]
 CMD [ "Flask.py" ]
-# new Docker code 
 

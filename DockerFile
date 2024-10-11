@@ -19,3 +19,4 @@ EXPOSE 8000
 ENTRYPOINT [ "python3" ]
 CMD [ "Flask.py" ]
 
+#Dockerfile

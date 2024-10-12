@@ -17,6 +17,6 @@ EXPOSE 8000
 
 # Entry point for the container
 ENTRYPOINT [ "python3" ]
-CMD [ "Flask.py" ]
+CMD [ "app.py" ]
 
 #Dockerfile
